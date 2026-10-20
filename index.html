@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bilim Test</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo">🧠</div>
+      <h1>Bilim Test</h1>
+      <p>Bilimingni sinab ko‘r!</p>
+    </header>
+
+    <section class="card" id="quiz">
+      <div class="progress-info">
+        <span id="questionNumber">1-savol</span>
+        <span id="progressText">0 / 0 ball</span>
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <h2 id="question">Savol yuklanmoqda...</h2>
+      <div id="answers"></div>
+
+      <p id="feedback" aria-live="polite"></p>
+      <button id="nextBtn" disabled>Keyingi savol →</button>
+    </section>
+
+    <section class="card result hidden" id="result">
+      <div class="logo">🏆</div>
+      <h2>Test yakunlandi!</h2>
+      <p id="score"></p>
+      <p id="percent"></p>
+      <button id="sendBtn">Natijani botga yuborish</button>
+      <button id="restartBtn" class="secondary">Qayta boshlash</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

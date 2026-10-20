@@ -1,0 +1,15 @@
+
+{
+  
+  "name": "marvel-test-bot",
+  "version": "1.0.0",
+  "description": "Marvel test Telegram Mini App",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
